@@ -21,6 +21,8 @@ OpenMV 摄像头示例：
  - 建议在暗环境下使用，避免可见光干扰。
  - 显示灰度图像，红外光斑用白色标注。
  - 已降低检测阈值（150-255）和面积阈值（20）以提高灵敏度。
+ 
+ Author:OrangeTTC
 """
 
 import sensor
@@ -31,7 +33,7 @@ import pyb
 # ------------------------- 配置区（可调节） -------------------------
 # 曝光控制（微秒，1000-50000 范围）
 # 数值越小图像越暗，越大越亮；根据环境光调整
-EXPOSURE_TIME_US = 10000  # 10ms 曝光时间，可调节
+EXPOSURE_TIME_US = 10000# 10ms 曝光时间，可调节
 
 # 红外光线检测阈值（0-255）
 # 像素灰度值在此范围内会被识别为红外光
@@ -48,9 +50,15 @@ PIXELS_THRESHOLD = 20   # 最小像素数（已降低）
 AREA_THRESHOLD = 20     # 最小面积（已降低）
 
 # 是否启用 UART 输出（如果需要把检测结果发给上位机或单片机，设置为 True）
-ENABLE_UART_OUTPUT = False
+ENABLE_UART_OUTPUT = True
 UART_BUS = 3  # 串口号，根据板子更改（OpenMV v3/v4 常用 3）
 UART_BAUD = 115200
+
+# 图像中心坐标（用于计算误差）
+FRAME_WIDTH = 320
+FRAME_HEIGHT = 240
+CENTER_X = FRAME_WIDTH // 2   # 160
+CENTER_Y = FRAME_HEIGHT // 2  # 120
 # ----------------------------------------------------------------------
 
 
@@ -64,6 +72,10 @@ def init_sensor():
     sensor.set_auto_gain(False)      # 关闭自动增益
     sensor.set_auto_exposure(False)  # 关闭自动曝光
     sensor.set_auto_whitebal(False)  # 关闭自动白平衡
+
+    # 旋转图像180度
+    sensor.set_hmirror(True)   # 水平镜像
+    sensor.set_vflip(True)     # 垂直翻转
 
     # 手动设置曝光时间，防止过曝
     # 如果你的 OpenMV 支持 set_exposure_us()，则使用此方法
@@ -116,17 +128,42 @@ def main():
             label = 'IR cx=%d cy=%d I=%d' % (b.cx(), b.cy(), max_int)
             img.draw_string(b.x(), max(0, b.y()-10), label, color=255, mono_space=False)
 
+        # 绘制屏幕中心十字线
+        img.draw_cross(CENTER_X, CENTER_Y, color=128, size=10)
 
-        # 4) 如果需要，通过 UART 发送检测信息（格式简单示例）
-        if ENABLE_UART_OUTPUT and uart is not None:
-            for b, avg_int, max_int in valid_blobs:
-                # 例如发送："IR,x,y,w,h,intensity\n"
-                try:
-                    out = 'IR,%d,%d,%d,%d,%d\n' % (b.cx(), b.cy(), b.w(), b.h(), max_int)
-                    uart.write(out)
-                except Exception as e:
-                    # 如果串口发送失败，继续循环（不要崩溃）
-                    pass
+        # 4) 如果需要，通过 UART 发送误差数据（STM32格式: E[X_Sign][XXXX][Y_Sign][YYYY]）
+        if ENABLE_UART_OUTPUT and uart is not None and len(valid_blobs) > 0:
+            # 取最大光强的光斑作为目标
+            b, avg_int, max_int = max(valid_blobs, key=lambda x: x[2])
+            
+            # 计算误差（目标位置 - 屏幕中心）
+            # X轴取反，实现左右方向颠倒
+            error_x = CENTER_X - b.cx()  # -160 ~ +160 (颠倒方向)
+            error_y = b.cy() - CENTER_Y  # -120 ~ +120
+            
+            # 限制误差范围
+            error_x = max(-9999, min(9999, error_x))
+            error_y = max(-9999, min(9999, error_y))
+            
+            # 确定符号和绝对值
+            x_sign = '1' if error_x >= 0 else '0'
+            x_abs = abs(error_x)
+            
+            y_sign = '1' if error_y >= 0 else '0'
+            y_abs = abs(error_y)
+            
+            # 构造数据帧: E[X_Sign][XXXX][Y_Sign][YYYY]
+            frame = 'E%s%04d%s%04d' % (x_sign, x_abs, y_sign, y_abs)
+            
+            try:
+                uart.write(frame)
+                # 在图像上显示误差信息
+                error_info = 'X:%+d Y:%+d' % (error_x, error_y)
+                img.draw_string(2, 220, error_info, color=255)
+                img.draw_string(2, 232, frame, color=255)
+            except Exception as e:
+                # 如果串口发送失败，继续循环（不要崩溃）
+                pass
 
         # 可选：在图像上显示当前帧率
         img.draw_string(2, 2, 'FPS:%.1f' % clock.fps(), color=(255, 255, 255))
