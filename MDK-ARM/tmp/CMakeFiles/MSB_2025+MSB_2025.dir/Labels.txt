@@ -1,0 +1,16 @@
+# Target labels
+ MSB_2025+MSB_2025
+# Source files and their labels
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025-complete.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-build.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-configure.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-database.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-download.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-executes.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-install.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-mkdir.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-patch.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-test.rule
+D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-update.rule

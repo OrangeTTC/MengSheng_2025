@@ -1,0 +1,101 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.42.0.0
+Copyright (C) 2025 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: iwaketsu momota
+sansumn
+User-based license: Keil MDK Community (non-commercial free of charge)
+Valid until: Jun 1 2033. Cached until: Nov 17 2025
+ 
+Tool Versions:
+Toolchain:       Keil MDK Community (non-commercial free of charge  Version: 5.42.0.0
+Toolchain Path:  C:\Users\jyjyu\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.23
+Assembler:       Armasm.exe V6.23
+Linker/Locator:  ArmLink.exe V6.23
+Library Manager: ArmAr.exe V6.23
+Hex Converter:   FromElf.exe V6.23
+CPU DLL:         SARMCM3.DLL V5.42.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.22.0
+Dialog DLL:      TCM.DLL V1.56.6.0
+ 
+<h2>Project:</h2>
+D:\MengshengCup2025\Control\MSB_2025\MDK-ARM\MSB_2025.uvprojx
+Project File Date:  11/10/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.23', folder: 'C:\Users\jyjyu\AppData\Local\Keil_v5\ARM\ARMCLANG\Bin'
+Rebuild target 'MSB_2025'
+compiling stm32h7xx_it.c...
+compiling stm32h7xx_hal_hsem.c...
+assembling startup_stm32h750xx.s...
+compiling stm32h7xx_hal_flash_ex.c...
+compiling stm32h7xx_hal_msp.c...
+compiling stm32h7xx_hal_gpio.c...
+compiling main.c...
+compiling stm32h7xx_hal_cortex.c...
+compiling stm32h7xx_hal_rcc.c...
+compiling stm32h7xx_hal_flash.c...
+compiling stm32h7xx_hal_dma_ex.c...
+compiling stm32h7xx_hal_rcc_ex.c...
+compiling stm32h7xx_hal_dma.c...
+compiling stm32h7xx_hal_pwr.c...
+compiling stm32h7xx_hal.c...
+compiling stm32h7xx_hal_pwr_ex.c...
+compiling stm32h7xx_hal_i2c_ex.c...
+compiling stm32h7xx_hal_mdma.c...
+compiling stm32h7xx_hal_exti.c...
+compiling Connect.c...
+compiling system_stm32h7xx.c...
+compiling stm32h7xx_hal_uart_ex.c...
+compiling Control.c...
+../Core/User/Vision.c(183): warning: format specifies type 'long' but the argument has type 'int32_t' (aka 'int') [-Wformat]
+  182 |     sprintf((char *)sent_data, "Gimbal Control: Target X=%ld, Target Y=%ld\r\n", 
+      |                                                          ~~~
+      |                                                          %d
+  183 |             gimbal.target_x, gimbal.target_y);
+      |             ^~~~~~~~~~~~~~~
+../Core/User/Vision.c(183): warning: format specifies type 'long' but the argument has type 'int32_t' (aka 'int') [-Wformat]
+  182 |     sprintf((char *)sent_data, "Gimbal Control: Target X=%ld, Target Y=%ld\r\n", 
+      |                                                                        ~~~
+      |                                                                        %d
+  183 |             gimbal.target_x, gimbal.target_y);
+      |                              ^~~~~~~~~~~~~~~
+2 warnings generated.
+compiling Vision.c...
+compiling stm32h7xx_hal_uart.c...
+compiling stm32h7xx_hal_i2c.c...
+linking...
+Program Size: Code=32606 RO-data=1038 RW-data=16 ZI-data=3584  
+FromELF: creating hex file...
+"MSB_2025\MSB_2025.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                https://www.keil.com/pack/ARM.CMSIS.6.1.0.pack
+                ARM::CMSIS@6.1.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 6.1.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32H7xx_DFP.4.0.0.pack
+                Keil::STM32H7xx_DFP@4.0.0
+                STMicroelectronics STM32H7 Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_MSB_2025
+  C:/Users/jyjyu/AppData/Local/Arm/Packs/ARM/CMSIS/6.1.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@6.1.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025-executes"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025-executes.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-executes.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-build.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-configure.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-patch.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-update.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-download.rule"
+		},
+		{
+			"file" : "D:/MengshengCup2025/Control/MSB_2025/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"MSB_2025+MSB_2025"
+		],
+		"name" : "MSB_2025+MSB_2025-executes"
+	}
+}

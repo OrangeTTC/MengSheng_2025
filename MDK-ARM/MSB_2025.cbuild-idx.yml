@@ -1,0 +1,18 @@
+build-idx:
+  generated-by: csolution version 2.8.0
+  csolution: MSB_2025.csolution.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: MSB_2025.cproject.yml
+  cbuilds:
+    - cbuild: MSB_2025+MSB_2025.cbuild.yml
+      project: MSB_2025
+      configuration: +MSB_2025
+      messages:
+        info:
+          - MSB_2025.cbuild-pack.yml - file is already up-to-date
+          - MSB_2025+MSB_2025.cbuild-run.yml - file generated successfully
+          - MSB_2025+MSB_2025.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@4.1.0
