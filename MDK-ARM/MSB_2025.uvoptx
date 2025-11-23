@@ -73,11 +73,11 @@
         <LExpSel>0</LExpSel>
       </OPTXL>
       <OPTFL>
-        <tvExp>0</tvExp>
+        <tvExp>1</tvExp>
         <tvExpOptDlg>0</tvExpOptDlg>
         <IsCurrentTarget>1</IsCurrentTarget>
       </OPTFL>
-      <CpuCode>0</CpuCode>
+      <CpuCode>18</CpuCode>
       <DebugOpt>
         <uSim>0</uSim>
         <uTrg>1</uTrg>
@@ -119,23 +119,56 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
+          <Key>ARMRTXEVENTFLAGS</Key>
+          <Name>-L70 -Z18 -C0 -M0 -T1</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGTARM</Key>
+          <Name>(1010=-1,-1,-1,-1,0)(6017=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(6016=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ARMDBGFLAGS</Key>
+          <Name></Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>ST-LINKIII-KEIL_SWO</Key>
+          <Name>-U-O206 -O206 -SF5000 -C0 -A0 -I0 -HNlocalhost -HP7184 -P1 -N00("ARM CoreSight SW-DP (ARM Core") -D00(6BA02477) -L00(0) -TO131090 -TC10000000 -TT10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO7 -FD20000000 -FC8000 -FN1 -FF0STM32H7x_128k.FLM -FS08000000 -FL020000 -FP0($$Device:STM32H750VBTx$CMSIS\Flash\STM32H7x_128k.FLM) -WA0 -WE0 -WVCE4 -WS2710 -WM0 -WP2 -WK0-R0</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
+          <Key>DLGUARM</Key>
+          <Name>(105=-1,-1,-1,-1,0)</Name>
+        </SetRegEntry>
+        <SetRegEntry>
+          <Number>0</Number>
           <Key>UL2CM3</Key>
           <Name>UL2CM3(-S0 -C0 -P0 -FD20000000 -FC8000 -FN1 -FF0STM32H7x_128k -FS08000000 -FL020000 -FP0($$Device:STM32H750VBTx$CMSIS\Flash\STM32H7x_128k.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint/>
+      <MemoryWindow1>
+        <Mm>
+          <WinNumber>1</WinNumber>
+          <SubType>0</SubType>
+          <ItemText>0x08020000</ItemText>
+          <AccSizeX>0</AccSizeX>
+        </Mm>
+      </MemoryWindow1>
       <Tracepoint>
         <THDelay>0</THDelay>
       </Tracepoint>
       <DebugFlag>
         <trace>0</trace>
         <periodic>0</periodic>
-        <aLwin>0</aLwin>
+        <aLwin>1</aLwin>
         <aCover>0</aCover>
         <aSer1>0</aSer1>
         <aSer2>0</aSer2>
         <aPa>0</aPa>
-        <viewmode>0</viewmode>
+        <viewmode>1</viewmode>
         <vrSel>0</vrSel>
         <aSym>0</aSym>
         <aTbox>0</aTbox>
@@ -168,7 +201,7 @@
       <pMultCmdsp></pMultCmdsp>
       <DebugDescription>
         <Enable>1</Enable>
-        <EnableFlashSeq>1</EnableFlashSeq>
+        <EnableFlashSeq>0</EnableFlashSeq>
         <EnableLog>0</EnableLog>
         <Protocol>2</Protocol>
         <DbgClock>5000000</DbgClock>
@@ -198,7 +231,7 @@
 
   <Group>
     <GroupName>Application/User/Core</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>0</RteFlg>

@@ -104,7 +104,8 @@ void Gimbal_SetPIDParams(float kp_x, float ki_x, float kd_x, float kp_y, float k
 void Gimbal_UpdateError(int16_t error_x, int16_t error_y);
 void Gimbal_Control(void);
 void Gimbal_Enable(uint8_t enable);
-void Gimbal_Start(void);  // 启动云台：设置原点并使能PID
+void Gimbal_Start(void);
+void Gimbal_Calibrate(void);  // 启动云台：设置原点并使能PID
 
 // 视觉数据处理函数
 void ProcessVisionData(uint8_t *data, uint16_t size);

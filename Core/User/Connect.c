@@ -90,6 +90,7 @@ void Command_Check(uint8_t* Usart_Rx, uint16_t Size){
                     alt_state = 0; // 从player1开始
                     last_send_tick = HAL_GetTick();
                 }
+                
             }
             break;
 
@@ -147,11 +148,15 @@ void Command_Check(uint8_t* Usart_Rx, uint16_t Size){
             pid_y.Kd = 0.01 * current;
             break;
         }
-        case 0x96: // 调试模式/PID关断 (根据你的描述修正为 0x63)
+        case 0x96:
             Gimbal_Enable(0);
             break;
         
-        case 0x69: // 退出调试/PID开启 (根据你的描述修正为 0x36)
+        case 0x69:
+            Gimbal_Calibrate();
+            break;
+
+        case 0x79:
             Gimbal_Enable(1);
             break;
 

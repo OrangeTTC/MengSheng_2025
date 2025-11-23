@@ -190,26 +190,25 @@ void Gimbal_Control(void)
 }
 
 /**
+ * @brief 校准云台中心偏移
+ * @note 将当前位置设为新的中心点（Error=0）
+ */
+void Gimbal_Calibrate(void)
+{
+    calibration_offset_x += gimbal.error_x;
+    calibration_offset_y += gimbal.error_y;
+    
+    // 立即清零当前误差
+    gimbal.error_x = 0;
+    gimbal.error_y = 0;
+}
+
+/**
  * @brief 使能/禁用云台PID控制
  * @param enable: 1=使能, 0=禁用
  */
 void Gimbal_Enable(uint8_t enable)
 {
-    // 如果是从禁用状态切换到使能状态（退出调试模式）
-    if (enable && !gimbal.enable) {
-        // 此时 gimbal.error_x/y 存储的是 (RawError - OldOffset)
-        // 我们希望当前的物理位置被视为新的中心，即希望 Error 变为 0
-        // 所以我们需要把当前的 Residual Error 累加到 Offset 中
-        // NewOffset = OldOffset + ResidualError
-        // 这样下一次计算时: Error = RawError - NewOffset = RawError - (OldOffset + ResidualError) = 0
-        calibration_offset_x += gimbal.error_x;
-        calibration_offset_y += gimbal.error_y;
-        
-        // 可选：立即清零当前误差，防止PID启动瞬间跳变
-        gimbal.error_x = 0;
-        gimbal.error_y = 0;
-    }
-
     gimbal.enable = enable;
     
     if (!enable) {
