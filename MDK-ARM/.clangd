@@ -1,0 +1,22 @@
+CompileFlags:
+  CompilationDatabase: >-
+    c:\Users\Orange\Desktop\MengSheng_2025-PID_Control\MengSheng_2025-PID_Control\MDK-ARM\out\MSB_2025\MSB_2025
+  Add:
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/RTE/_MSB_2025
+    - >-
+      -IC:/Users/Orange/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Core/Inc
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Drivers/STM32H7xx_HAL_Driver/Inc
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Drivers/CMSIS/Device/ST/STM32H7xx/Include
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Drivers/CMSIS/Include
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/../Core/User
+    - >-
+      -IC:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025

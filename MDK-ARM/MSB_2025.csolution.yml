@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.6.0
+  created-for: CMSIS-Toolbox@2.12.0
+  compiler: AC6
+  target-types:
+    - type: MSB_2025
+      device: STM32H750VBTx
+      optimize: debug
+  projects:
+    - project: MSB_2025.cproject.yml

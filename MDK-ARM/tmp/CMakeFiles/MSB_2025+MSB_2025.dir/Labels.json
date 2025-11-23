@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/CMakeFiles/MSB_2025+MSB_2025-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-build.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-database.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-download.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-executes.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-install.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-test.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/MengSheng_2025-PID_Control/MengSheng_2025-PID_Control/MDK-ARM/tmp/MSB_2025+MSB_2025/src/MSB_2025+MSB_2025-stamp/MSB_2025+MSB_2025-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"MSB_2025+MSB_2025"
+		],
+		"name" : "MSB_2025+MSB_2025"
+	}
+}

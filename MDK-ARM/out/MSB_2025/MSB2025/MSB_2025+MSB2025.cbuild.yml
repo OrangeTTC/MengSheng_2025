@@ -1,0 +1,222 @@
+build:
+  generated-by: csolution version 2.12.0
+  solution: ../../../MSB_2025.csolution.yml
+  project: ../../../MSB_2025.cproject.yml
+  context: MSB_2025+MSB2025
+  compiler: GCC
+  device: STMicroelectronics::STM32H750VBTx
+  device-pack: Keil::STM32H7xx_DFP@4.1.3
+  device-books:
+    - name: https://developer.arm.com/documentation/dui0646/latest
+      title: Cortex-M7 Generic User Guide
+    - name: https://www.st.com/resource/en/reference_manual/rm0433-stm32h742-stm32h743753-and-stm32h750-value-line-advanced-armbased-32bit-mcus-stmicroelectronics.pdf
+      title: STM32H742, STM32H743/753 and STM32H750 Reference Manual
+    - name: https://www.st.com/resource/en/datasheet/stm32h750ib.pdf
+      title: STM32H750VB STM32H750IB STM32H750XB Data Sheet
+  dbgconf:
+    - file: ../../../.cmsis/MSB_2025+MSB2025.dbgconf
+      version: 1.1.1
+  processor:
+    dsp: on
+    endian: little
+    fpu: dp
+    core: Cortex-M7
+  packs:
+    - pack: ARM::CMSIS@6.2.0
+      path: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0
+    - pack: Keil::STM32H7xx_DFP@4.1.3
+      path: ${CMSIS_PACK_ROOT}/Keil/STM32H7xx_DFP/4.1.3
+  optimize: debug
+  debug: on
+  misc:
+    ASM:
+      - -masm=auto
+    C:
+      - -std=c99
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    CPP:
+      - -xc++
+      - -std=c++11
+      - -fno-rtti
+      - -funsigned-char
+      - -fshort-enums
+      - -fshort-wchar
+      - -ffunction-sections
+      - -Wno-packed
+      - -Wno-missing-variable-declarations
+      - -Wno-missing-prototypes
+      - -Wno-missing-noreturn
+      - -Wno-sign-conversion
+      - -Wno-nonportable-include-path
+      - -Wno-reserved-id-macro
+      - -Wno-unused-macros
+      - -Wno-documentation-unknown-command
+      - -Wno-documentation
+      - -Wno-license-management
+      - -Wno-parentheses-equality
+    Link:
+      - --map
+      - --load_addr_map_info
+      - --xref
+      - --callgraph
+      - --symbols
+      - --info sizes
+      - --info totals
+      - --info unused
+      - --info veneers
+      - --strict
+      - --summary_stderr
+      - --info summarysizes
+  define:
+    - USE_PWR_LDO_SUPPLY
+    - USE_HAL_DRIVER
+    - STM32H750xx
+    - STM32H750xx
+    - _RTE_
+  define-asm:
+    - STM32H750xx
+    - _RTE_
+  add-path:
+    - ../../../../Core/Inc
+    - ../../../../Drivers/STM32H7xx_HAL_Driver/Inc
+    - ../../../../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy
+    - ../../../../Drivers/CMSIS/Device/ST/STM32H7xx/Include
+    - ../../../../Drivers/CMSIS/Include
+    - ../../../../Core/User
+    - ../../../RTE/_MSB2025
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  add-path-asm:
+    - ../../../RTE/_MSB2025
+    - ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+  output-dirs:
+    intdir: ../../../tmp
+    outdir: .
+    rtedir: ../../../RTE
+  output:
+    - type: elf
+      file: MSB_2025.elf
+  components:
+    - component: ARM::CMSIS:CORE@6.1.1
+      condition: ARMv6_7_8-M Device
+      from-pack: ARM::CMSIS@6.2.0
+      selected-by: ARM::CMSIS:CORE@6.1.1
+      files:
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+          category: include
+          version: 6.1.1
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Include/tz_context.h
+          category: header
+          version: 6.1.1
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Template/ARMv8-M/main_s.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: Secure mode 'main' module for ARMv8-M
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Core/Template/ARMv8-M/tz_context.c
+          category: sourceC
+          attr: template
+          version: 1.1.1
+          select: RTOS Context Management (TrustZone for ARMv8-M)
+        - file: ${CMSIS_PACK_ROOT}/ARM/CMSIS/6.2.0/CMSIS/Documentation/html/Core/index.html
+          category: doc
+          version: 6.1.1
+  linker:
+    script: ../../../MSB_2025_MSB2025.sct
+  groups:
+    - group: Application/MDK-ARM
+      files:
+        - file: ../../../startup_stm32h750xx.s
+          category: sourceAsm
+    - group: Application/User/Core
+      files:
+        - file: ../../../../Core/Src/main.c
+          category: sourceC
+        - file: ../../../../Core/Src/stm32h7xx_it.c
+          category: sourceC
+        - file: ../../../../Core/Src/stm32h7xx_hal_msp.c
+          category: sourceC
+    - group: Drivers/STM32H7xx_HAL_Driver
+      files:
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_cortex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_rcc_ex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_flash_ex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_gpio.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_hsem.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_dma_ex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_mdma.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_pwr_ex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_i2c_ex.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_exti.c
+          category: sourceC
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+        - file: ../../../../Drivers/STM32H7xx_HAL_Driver/Src/stm32h7xx_hal_uart_ex.c
+          category: sourceC
+          misc:
+            CPP:
+              - -xc++
+    - group: Drivers/CMSIS
+      files:
+        - file: ../../../../Core/Src/system_stm32h7xx.c
+          category: sourceC
+    - group: User
+      files:
+        - file: ../../../../Core/User/Connect.c
+          category: sourceC
+        - file: ../../../../Core/User/Control.c
+          category: sourceC
+        - file: ../../../../Core/User/Vision.c
+          category: sourceC
+  constructed-files:
+    - file: ../../../RTE/_MSB2025/RTE_Components.h
+      category: header
+  licenses:
+    - license: Apache-2.0
+      packs:
+        - pack: ARM::CMSIS@6.2.0
+        - pack: Keil::STM32H7xx_DFP@4.1.3
+      components:
+        - component: ARM::CMSIS:CORE@6.1.1
+    - license: BSD-3-Clause
+      packs:
+        - pack: Keil::STM32H7xx_DFP@4.1.3
