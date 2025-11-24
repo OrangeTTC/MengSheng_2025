@@ -1,0 +1,52 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/CMakeFiles/for_fu+for_fu"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/CMakeFiles/for_fu+for_fu.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/CMakeFiles/for_fu+for_fu-complete.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-build.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-database.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-download.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-executes.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-install.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-test.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"for_fu+for_fu"
+		],
+		"name" : "for_fu+for_fu"
+	}
+}

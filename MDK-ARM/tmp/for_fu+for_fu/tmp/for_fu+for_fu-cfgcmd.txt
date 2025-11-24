@@ -1,0 +1,1 @@
+cmd='C:/Program Files/CMake/bin/cmake.exe;-G;Ninja;-S;<SOURCE_DIR>;-B;<BINARY_DIR>;-DSOLUTION_ROOT=C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM;-DCMSIS_PACK_ROOT=C:/Users/Orange/AppData/Local/Arm/Packs;-DCMSIS_COMPILER_ROOT=C:/cmsis-toolbox-windows-amd64/etc'

@@ -1,0 +1,19 @@
+build-idx:
+  generated-by: csolution version 2.12.0
+  csolution: for_fu.csolution.yml
+  cbuild-run: out/for_fu+for_fu.cbuild-run.yml
+  tmpdir: tmp
+  cprojects:
+    - cproject: for_fu.cproject.yml
+  cbuilds:
+    - cbuild: out/for_fu/for_fu/for_fu+for_fu.cbuild.yml
+      project: for_fu
+      configuration: +for_fu
+      messages:
+        info:
+          - for_fu.cbuild-pack.yml - file is already up-to-date
+          - for_fu+for_fu.cbuild-run.yml - file is already up-to-date
+          - for_fu+for_fu.cbuild.yml - file is already up-to-date
+      packs-unused:
+        - pack: ARM::CMSIS-DSP@1.16.2
+        - pack: ARM::CMSIS-NN@4.1.0

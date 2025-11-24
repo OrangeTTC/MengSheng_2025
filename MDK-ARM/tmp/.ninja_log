@@ -1,0 +1,15 @@
+# ninja log v7
+18	61	7856014981505795	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-mkdir	760830b9824bbe0e
+18	61	7856014981505795	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-mkdir	760830b9824bbe0e
+61	98	7856014981871661	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-download	656163f8a837dc02
+61	98	7856014981871661	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-download	656163f8a837dc02
+98	136	7856014982257998	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-update	b04ea0694beacc00
+98	136	7856014982257998	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-update	b04ea0694beacc00
+136	172	7856014982623437	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-patch	65fa3ae666e3de16
+136	172	7856014982623437	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-patch	65fa3ae666e3de16
+172	2522	7856015006117665	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-configure	a78b1bb047c2c960
+172	2522	7856015006117665	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-configure	a78b1bb047c2c960
+12	106	7856015014501703	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-database	959b725ebc89d058
+12	106	7856015014501703	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-database	959b725ebc89d058
+26	134	7856015332881779	for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-database	959b725ebc89d058
+26	134	7856015332881779	C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-database	959b725ebc89d058

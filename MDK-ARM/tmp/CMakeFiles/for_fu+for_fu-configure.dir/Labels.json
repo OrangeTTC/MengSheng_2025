@@ -1,0 +1,34 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/CMakeFiles/for_fu+for_fu-configure"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/CMakeFiles/for_fu+for_fu-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-configure.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-patch.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-update.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-download.rule"
+		},
+		{
+			"file" : "C:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu/src/for_fu+for_fu-stamp/for_fu+for_fu-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"for_fu+for_fu"
+		],
+		"name" : "for_fu+for_fu-configure"
+	}
+}

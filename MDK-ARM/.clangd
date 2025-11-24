@@ -1,0 +1,16 @@
+CompileFlags:
+  CompilationDatabase: c:\Users\Orange\Desktop\for_fu\for_fu\MDK-ARM\out\for_fu\for_fu
+  Add:
+    - '-IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/RTE/_for_fu'
+    - >-
+      -IC:/Users/Orange/AppData/Local/Arm/Packs/ARM/CMSIS/6.2.0/CMSIS/Core/Include
+    - '-IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../Core/Inc'
+    - >-
+      -IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../Drivers/STM32F4xx_HAL_Driver/Inc
+    - >-
+      -IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy
+    - >-
+      -IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../Drivers/CMSIS/Device/ST/STM32F4xx/Include
+    - '-IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../Drivers/CMSIS/Include'
+    - '-IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/../OLED'
+    - '-IC:/Users/Orange/Desktop/for_fu/for_fu/MDK-ARM/tmp/for_fu+for_fu'
